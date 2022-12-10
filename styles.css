@@ -1,0 +1,38 @@
+body {
+    background: rgb(151, 81, 93);
+}
+
+.container {
+    /*border: 1px solid black;*/    /* just had this border there while we did our other work. */
+    width: 95%;
+    height: 100vh;
+    display: flex;
+}
+
+.quotes {
+    /* border: 1px solid black; */      /* no longer need this border now that we have the other things aligned and picked our border. */
+    width: 900px;
+    height: 450px;
+    margin: auto;   /* makes the box in the center. */
+    display: flex;  /* made a flex box so we can arrange where our items are located inside of the container. */
+    flex-direction: column;
+    justify-content: center;    /* aligns items in the center vertically (y-axis). */
+    align-items: center;    /* aligns items horizontally in tthe center (x-axis). */
+    padding: 0 50px;    /* 0 is for padding on top and bottom, the 50px does the padding on left and right. */
+    color: rgb(24, 23, 41);
+    background-color: gray;
+    border: 10px solid rgb(236, 214, 17);
+}
+
+.quotes p, .quotes h3 {     /* code for the actual text, combined so we dont have to repeat code. */
+    font-size: 1.5rem;  /* each rem is equivalent to 16px, so 1.5rem is equal to 24px. */
+}
+
+/* applied the media query incase someone looks at it on a phone, they will get smaller font etc. */
+@media(max-width: 480px) {  /*this means a device with 480px or less with get the following code result. */
+    .quotes p, .quotes h3 {
+        font-size: 1rem;        /* 1rem instead of 1.5rem. */
+    }
+}
+
+/*Tip: to preview the effect of the @media query: go to http://www.responsinator.com/ and paste your website url into space. */
