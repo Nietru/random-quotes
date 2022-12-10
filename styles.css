@@ -2,11 +2,26 @@ body {
     background: rgb(151, 81, 93);
 }
 
+h2 {
+    width: 550px;
+    height: 70px;
+    color: rgb(236, 199, 30);
+    border: 2px solid rgb(24, 23, 41);
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    text-decoration: underline;
+    background-color: gray;
+}
+
 .container {
     /*border: 1px solid black;*/    /* just had this border there while we did our other work. */
     width: 95%;
     height: 100vh;
     display: flex;
+    text-align: center;
 }
 
 .quotes {
